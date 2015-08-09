@@ -123,17 +123,21 @@ for (i = 0; i < string.length; i++) {
     stringArray.push(string[i]);
 }
 
+// returns ["p", "a", "l", "e"]
+
 var finalArray = [];
 
 for (i = 0; i < final.length; i++) {
     finalArray.push(final[i]);
 }
 
+// returns ["p", "l", "e"]
+
 // desired string is pale
 
 function updatingString(string, final) {
     if (string === final) {
-        console.log("True!");
+        console.log("The strings are already identical!");
     } else {
         string.splice(1, 0, "a");
         transformationCount++;
@@ -153,4 +157,4 @@ function updatingString(string, final) {
         }
 }
 
-updatingString(stringArray, finalArray);
+updatingString(stringArray, finalArray); // calling function updatingString
